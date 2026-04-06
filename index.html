@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plantorium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- Center Card -->
+  <div class="center-card">
+    <h1>Plantorium🌱: A Plant Library</h1>
+    <input type="text" id="searchBar" placeholder="Search for a plant...">
+    <button onclick="searchPlant()">Search</button>
+
+    <!-- Quote Section -->
+    <div class="quote-box">
+      <p id="quote"></p>
+      <p id="author"></p>
+      <button onclick="newQuote()">New Quote</button>
+    </div>
+
+    <!-- Custom Dropdown -->
+    <div class="dropdown">
+      <div class="dropdown-selected">Select a Plant</div>
+      <div class="dropdown-options" id="dropdownOptions">
+        <!-- Options will be dynamically populated -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="plantModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Script files -->
+  <script src="script.js"></script>
+</body>
+</html>

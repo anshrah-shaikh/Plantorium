@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact 🌿</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(135deg, rgba(10, 31, 20, 0.85), rgba(26, 51, 34, 0.9), rgba(16, 32, 24, 0.85)),
+        url('bgimg1.png') center/cover no-repeat; /* 🌿 Main background image */
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: rgba(17, 35, 25, 0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 15px 0;
+      z-index: 100;
+    }
+
+    .navbar a {
+      color: #e8f3e8;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: 0.3s;
+      font-size: 1rem;
+    }
+
+    .navbar a:hover {
+      color: #b4e7c2;
+      text-shadow: 0 0 6px rgba(180, 231, 194, 0.6);
+    }
+
+    /* Main container */
+    .contact-container {
+      margin-top: 120px;
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      padding: 50px;
+      width: 85%;
+      max-width: 700px;
+      text-align: center;
+      color: #e0f0e0;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 1.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-container::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: url('img.png') repeat; /* 🌿 Card texture */
+      opacity: 0.05;
+      transform: rotate(15deg);
+      pointer-events: none;
+    }
+
+    .contact-container h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #e7fce7;
+      letter-spacing: 1px;
+    }
+
+    .contact-container p {
+      color: rgba(230, 245, 230, 0.9);
+      font-size: 1rem;
+      margin-bottom: 35px;
+    }
+
+    .info-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .info-item {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 15px;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 480px;
+      justify-content: flex-start;
+      transition: 0.3s;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .info-item:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .info-item i {
+      font-size: 1.4rem;
+      margin-right: 20px;
+      color: #b4e7c2;
+    }
+
+    .info-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .info-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #b4e7c2;
+      margin-bottom: 4px;
+    }
+
+    .info-item a, .info-item span {
+      color: #e8f3e8;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 400;
+      transition: 0.3s;
+    }
+
+    .info-item a:hover {
+      color: #b4e7c2;
+    }
+
+    footer {
+      margin-top: 50px;
+      color: rgba(230, 245, 230, 0.7);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        width: 90%;
+        padding: 35px;
+      }
+
+      .info-item {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- Contact Info Section -->
+  <div class="contact-container">
+    <h1>Let’s Stay Connected 🌲</h1>
+    <p>Whispers of the forest, and a few links where you can reach me.</p>
+
+    <div class="info-block">
+      <!-- 🌿 Email -->
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div class="info-details">
+          <span class="info-label">Email</span>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shaikhanshrahcs242501@gmail.com" target="_blank">
+          shaikhanshrahcs242501@gmail.com</a>
+        </div>
+      </div>
+
+      <!-- 🌸 Instagram -->
+      <div class="info-item">
+        <i class="fab fa-instagram"></i>
+        <div class="info-details">
+          <span class="info-label">Instagram</span>
+          <a href="https://www.instagram.com/anshrahshaikh07?igsh=ZzNwMDVnbGFoZTBw" target="_blank">@anshrahshaikh07</a>
+        </div>
+      </div>
+
+      <!-- 🌼 LinkedIn -->
+      <div class="info-item">
+        <i class="fab fa-linkedin"></i>
+        <div class="info-details">
+          <span class="info-label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/anshrah-shaikh-1b0319371/" target="_blank">Anshrah Shaikh</a>
+        </div>
+      </div>
+
+      <!-- 🍃 GitHub -->
+      <div class="info-item">
+        <i class="fab fa-github"></i>
+        <div class="info-details">
+          <span class="info-label">GitHub</span>
+          <a href="https://github.com/Ansh-rah" target="_blank">Anshrah</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>Rooted in code & lack of sleep 🌿☕</footer>
+  </div>
+
+</body>
+</html>

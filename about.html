@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About 🌿</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(135deg, rgba(10, 31, 20, 0.85), rgba(26, 51, 34, 0.9), rgba(16, 32, 24, 0.85)),
+        url('bgimg1.png') center/cover no-repeat; /* 🌿 Main background image */
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+      color: #e8f3e8;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: rgba(17, 35, 25, 0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 15px 0;
+      z-index: 100;
+    }
+
+    .navbar a {
+      color: #e8f3e8;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: 0.3s;
+      font-size: 1rem;
+    }
+
+    .navbar a:hover {
+      color: #b4e7c2;
+      text-shadow: 0 0 6px rgba(180, 231, 194, 0.6);
+    }
+
+    /* Container */
+    .about-container {
+      margin-top: 120px;
+      max-width: 850px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      padding: 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 1.2s ease;
+      backdrop-filter: blur(15px);
+    }
+
+    .about-container::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: url('img.png') repeat; /* 🌿 Card texture */
+      opacity: 0.05;
+      transform: rotate(15deg);
+      pointer-events: none;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #e7fce7;
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.7;
+      color: rgba(230, 245, 230, 0.9);
+      margin-bottom: 30px;
+      font-size: 1.05rem;
+    }
+
+    .highlight {
+      color: #b4e7c2;
+      font-weight: 500;
+    }
+
+    .section {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .section h2 {
+      font-size: 1.4rem;
+      color: #b4e7c2;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1rem;
+      color: rgba(230, 245, 230, 0.85);
+    }
+
+    .quote {
+      font-style: italic;
+      margin: 40px 0;
+      color: #b4e7c2;
+      border-left: 3px solid rgba(180, 231, 194, 0.4);
+      padding-left: 20px;
+    }
+
+    .team {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .team h2 {
+      font-size: 1.4rem;
+      color: #b4e7c2;
+      margin-bottom: 10px;
+    }
+
+    .team p {
+      font-size: 1rem;
+      color: rgba(230, 245, 230, 0.85);
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 50px;
+      color: rgba(230, 245, 230, 0.7);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 700px) {
+      .about-container {
+        width: 90%;
+        padding: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- About Section -->
+  <div class="about-container">
+    <h1>About Plantorium🌿</h1>
+    <p>
+      Among the quiet paths and the hum of leaves, lies a small effort to connect nature and technology.  
+      This website is a digital greenhouse — a living archive of the plants that thrive within the <span class="highlight">M.C.G.M Garden - Kamalakarpant Walawalkar Udyan, Oshiwara</span>.
+    </p>
+
+    <div class="quote">
+      “Every leaf speaks bliss to me, fluttering from the autumn tree.”  
+      <br>– Emily Brontë
+    </div>
+
+    <div class="section">
+      <h2>🌱 Our Purpose</h2>
+      <p>
+        Each plant within this garden carries its own story — scientific, cultural, and spiritual.  
+        Our aim is to preserve and share this knowledge in the simplest way possible.  
+        By scanning the <span class="highlight">QR codes</span> hung near every plant, visitors can instantly access detailed information about its origin, growth pattern, medicinal use, and unique characteristics.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🍃 The Process</h2>
+      <p>
+        The data for each plant was collected manually through field visits — noting their <span class="highlight">scientific names</span>,  
+        capturing high-quality images, and verifying their taxonomy.  
+        All information was then integrated into this platform for easy access and learning.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🌸 Vision</h2>
+      <p>
+        This project hopes to inspire curiosity, mindfulness, and respect for the green life around us.  
+        Whether you are a student, researcher, or just a passerby who paused to admire a leaf — we welcome you into this little digital forest.
+      </p>
+    </div>
+
+    <!-- Team Credits -->
+    <div class="team">
+      <h2>🌿 Team Credits</h2>
+      <p>
+        A huge thank you to the amazing team who made this project possible:  
+        <span class="highlight">Jeetesh J Shirganoor, Aquib Hafiz Shaikh, Daniyal Ayyub Khan, Vikas Pal, Abhishek Singh</span>.  
+        Their dedication in collecting and verifying the plant data brought life to this digital garden.  
+        Web development was handled by <span class="highlight">Anshrah Ansar Hussain Shaikh</span>, making this whole experience blossom online.
+      </p>
+    </div>
+
+    <footer>Planting ideas, forgetting to water them 🌿🤦‍♀️🌿</footer>
+  </div>
+
+</body>
+</html>
